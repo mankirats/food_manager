@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/dump.json
+food_manager/node_modules
+food_manager/dump.json
 /.pnp
 .pnp.js
 
