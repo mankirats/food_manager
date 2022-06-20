@@ -11,8 +11,10 @@ function Header(props) {
             <HeaderBackground>
                 <HeaderTitle>foodManager</HeaderTitle>
                 <div>
-                    <HeaderLink>Food Recipes</HeaderLink>
-                    <StoreLink>Store</StoreLink>
+                    {/* <HeaderLink>Food Recipes</HeaderLink> */}
+                    <StoreLink>
+                        &nbsp;&nbsp;&nbsp;View Order&nbsp;&nbsp;&nbsp;
+                    </StoreLink>
                 </div>
             </HeaderBackground>
         </>
