@@ -3,7 +3,7 @@ import { StyledTitle } from "./CustomStyle";
 function RecentlyAddedRecipes(props) {
     return (
         <>
-            <StyledTitle>Recently Added Recipes</StyledTitle>
+            <StyledTitle>New Restaurants near you</StyledTitle>
         </>
     );
 }
