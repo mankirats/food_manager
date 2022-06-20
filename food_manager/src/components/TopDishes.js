@@ -7,7 +7,7 @@ import {
 function TopDishes(props) {
     return (
         <>
-            <StyledTitle>Top Food Recipes</StyledTitle>
+            <StyledTitle>Top Rated Restaurants Near You</StyledTitle>
             <TopDishesBackground>
                 <TopDishItemSpan>mkmklm</TopDishItemSpan>
                 <TopDishItemSpan>mkmklm</TopDishItemSpan>
