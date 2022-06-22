@@ -2,7 +2,9 @@
 
 # dependencies
 food_manager/node_modules
+food_manager_backend/node_modules
 food_manager/dump.json
+food_manager_backend/config
 /.pnp
 .pnp.js
 
