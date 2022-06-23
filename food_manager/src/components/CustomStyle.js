@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledTitle = styled.div`
     font-size: 0.88rem;
-    font-weight: 500;
+    font-weight: 400;
 
     background-color: #f1eee9;
     padding: 0.5rem calc(2.1rem + 2vw);
@@ -72,6 +72,8 @@ const TopDishItemSpan = styled.span`
     border: 0.5px solid rgba(115, 119, 123, 0.4);
     background-color: rgba(236, 236, 236, 0.2);
     border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
 `;
 
 export {
