@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import defaultImage from "./img1.webp";
 
 const StyledTitle = styled.div`
     font-size: 0.88rem;
@@ -65,14 +66,18 @@ const TopDishesBackground = styled.div`
     padding-bottom: 0.5rem;
 `;
 const TopDishItemSpan = styled.span`
+    display: block;
     width: calc(7rem + 12vw);
-    height: calc(5rem + 8vh);
+    height: calc(6rem + 6.5vh);
     margin: 1rem 0.5rem;
     padding: 0.5rem 1rem 0 1rem;
     border: 0.5px solid rgba(115, 119, 123, 0.4);
-    background-color: rgba(236, 236, 236, 0.2);
+    /* background-color: rgba(236, 236, 236, 0.2); */
     border-radius: 6px;
     font-size: 0.9rem;
+    background: url(${(props) => props.image || { defaultImage }}) no-repeat
+        100% 100%;
+    background-size: cover;
     font-weight: 500;
 `;
 
