@@ -94,7 +94,7 @@ const RestaurantTitle = styled(StyledTitle)`
     border-radius: 8px;
     font-weight: 500;
     min-width: calc(1rem + 0.7vw);
-    padding: 0.5rem calc(1rem + 1vw);
+    padding: 0.25rem calc(1rem + 0.8vw);
 `;
 
 export {
