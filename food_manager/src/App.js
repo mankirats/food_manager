@@ -1,15 +1,13 @@
 import "./App.css";
-import Header from "./components/Header";
-import RecipeIndex from "./components/RecipeIndex";
-import TopDishes from "./components/TopDishes";
-import RecentlyAddedRecipes from "./components/RecentlyAddedRecipes";
+import HomePage from "./components/HomePage";
+
+import { Routes, Route } from "react-router-dom";
 function App() {
     return (
         <div className="App">
-            <Header></Header>
-            <RecipeIndex></RecipeIndex>
-            <TopDishes></TopDishes>
-            <RecentlyAddedRecipes></RecentlyAddedRecipes>
+            <Routes>
+                <Route path="/" element={<HomePage />}></Route>
+            </Routes>
         </div>
     );
 }
