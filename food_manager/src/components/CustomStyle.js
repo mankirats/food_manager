@@ -87,14 +87,14 @@ const TopDishItemSpan = styled.span`
 const RestaurantTitle = styled(StyledTitle)`
     position: absolute;
     top: calc(-0.7rem - 1vh);
-    left: 0;
+    left: 5px;
     background: rgba(255, 255, 255, 0.9);
     color: black;
     z-index: 2;
     border-radius: 8px;
     font-weight: 500;
     min-width: calc(1rem + 0.7vw);
-    padding: 0.25rem calc(1rem + 0.8vw);
+    padding: 0.25rem calc(0.8rem + 0.8vw);
 `;
 
 export {
