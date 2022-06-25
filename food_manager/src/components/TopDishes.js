@@ -2,17 +2,13 @@ import {
     TopDishesBackground,
     StyledTitle,
     TopDishItemSpan,
+    RestaurantTitle,
 } from "./CustomStyle";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import img2 from "../images/img2.webp";
 
 function TopDishes(props) {
-    const [restaurantData, setRestaurantData] = useState([
-        "Chipotle",
-        "Panera",
-        "Cookout",
-    ]);
+    const [restaurantData, setRestaurantData] = useState([]);
     useEffect(() => {
         getRestaurantsData();
     }, []);
@@ -30,24 +26,21 @@ function TopDishes(props) {
     };
     // setRestaurantData(getRestaurants());
     const data = restaurantData.map((op, index) => (
-        <TopDishItemSpan
-            key={index}
-            image={require(`../images/img${index}.webp`)}
-        >
-            {op}
-        </TopDishItemSpan>
+        <>
+            <TopDishItemSpan
+                key={index}
+                image={require(`./images/img${index}.webp`)}
+            >
+                <RestaurantTitle key={`title${index}`}>{op}</RestaurantTitle>
+            </TopDishItemSpan>
+        </>
     ));
     return (
         <>
-            <StyledTitle>Top Rated Restaurants Near You</StyledTitle>
-            <TopDishesBackground>{data}</TopDishesBackground>
-            {/* <img
-                src={require("../images/img2.webp")}
-                alt=""
-                srcset=""
-                width="100%"
-                height="100%"
-            /> */}
+            <StyledTitle key="title">
+                Top Rated Restaurants Near You
+            </StyledTitle>
+            <TopDishesBackground key="topDish">{data}</TopDishesBackground>
         </>
     );
 }
