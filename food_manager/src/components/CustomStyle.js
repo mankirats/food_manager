@@ -3,15 +3,16 @@ import styled from "styled-components";
 const StyledTitle = styled.div`
     font-size: 0.88rem;
     font-weight: 400;
-    background-color: #f1eee9;
+    background-color: #ced0ce;
     padding: 0.5rem calc(2.1rem + 2vw);
     margin-bottom: 1rem;
+    color: #4f5d75;
 `;
 const HeaderBackground = styled.div`
     border-bottom: 0.5px solid rgba(115, 119, 123, 0.4);
     height: 3rem;
     width: 100%;
-    background-color: #191919;
+    background-color: #2d3142;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -36,7 +37,7 @@ const StoreLink = styled.span`
     color: White;
     font-weight: 500;
     padding: 0.4rem 0.7rem;
-    background: #f69000;
+    background: #ee8156;
     border-radius: 24px;
 `;
 
@@ -45,7 +46,7 @@ const RecipeIndexBackground = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #53b1b1;
+    background-color: #4f5d75;
     color: white;
     width: 100%;
     min-height: 2rem;
@@ -73,14 +74,11 @@ const TopDishItemSpan = styled.span`
     margin: 1rem 0.5rem;
     padding: 0.5rem 1rem 0 1rem;
     border: 0.5px solid rgba(115, 119, 123, 0.4);
-    /* background-color: rgba(236, 236, 236, 0.2); */
     border-radius: 6px;
     font-size: 1rem;
     background: url(${(props) => props.image}) no-repeat 100% 100%;
     background-size: cover;
     position: relative;
-
-    /* filter: blur(1.5px); */
     margin-top: 1rem;
 `;
 
@@ -97,7 +95,29 @@ const RestaurantTitle = styled(StyledTitle)`
     padding: 0.25rem calc(0.8rem + 0.8vw);
 `;
 
+const RestaurantPageHeader = styled(StyledTitle)`
+    min-height: 3rem;
+    font-size: calc(1.5rem + 1.2vw);
+    color: white;
+`;
+
+const FoodItemDiv = styled.div`
+    display: flex;
+    padding: 0.6rem 1.5rem;
+    width: 95%;
+    height: 5rem;
+    margin: auto;
+    background: #f5f1e3;
+    color: #515d75;
+    justify-content: center;
+`;
+
+const FoodOtherItemsSpan = styled.span``;
+
 export {
+    FoodOtherItemsSpan,
+    FoodItemDiv,
+    RestaurantPageHeader,
     RestaurantTitle,
     HeaderBackground,
     HeaderTitle,
