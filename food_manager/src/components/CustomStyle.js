@@ -87,7 +87,7 @@ const TopDishItemSpan = styled.span`
 const RestaurantTitle = styled(StyledTitle)`
     position: absolute;
     top: calc(-0.7rem - 1vh);
-    left: 5px;
+    right: 5px;
     background: rgba(255, 255, 255, 0.9);
     color: black;
     z-index: 2;
