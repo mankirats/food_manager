@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import defaultImage from "./img1.webp";
 
 const StyledTitle = styled.div`
     font-size: 0.88rem;
     font-weight: 400;
-
     background-color: #f1eee9;
     padding: 0.5rem calc(2.1rem + 2vw);
+    margin-bottom: 1rem;
 `;
 const HeaderBackground = styled.div`
     border-bottom: 0.5px solid rgba(115, 119, 123, 0.4);
@@ -66,7 +65,9 @@ const TopDishesBackground = styled.div`
     padding-bottom: 0.5rem;
 `;
 const TopDishItemSpan = styled.span`
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: calc(7rem + 12vw);
     height: calc(6rem + 6.5vh);
     margin: 1rem 0.5rem;
@@ -74,14 +75,30 @@ const TopDishItemSpan = styled.span`
     border: 0.5px solid rgba(115, 119, 123, 0.4);
     /* background-color: rgba(236, 236, 236, 0.2); */
     border-radius: 6px;
-    font-size: 0.9rem;
-    background: url(${(props) => props.image || { defaultImage }}) no-repeat
-        100% 100%;
+    font-size: 1rem;
+    background: url(${(props) => props.image}) no-repeat 100% 100%;
     background-size: cover;
+    position: relative;
+
+    /* filter: blur(1.5px); */
+    margin-top: 1rem;
+`;
+
+const RestaurantTitle = styled(StyledTitle)`
+    position: absolute;
+    top: calc(-0.7rem - 1vh);
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    z-index: 2;
+    border-radius: 8px;
     font-weight: 500;
+    min-width: calc(1rem + 0.7vw);
+    padding: 0.5rem calc(1rem + 1vw);
 `;
 
 export {
+    RestaurantTitle,
     HeaderBackground,
     HeaderTitle,
     HeaderLink,
