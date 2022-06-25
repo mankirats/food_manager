@@ -26,20 +26,17 @@ function TopDishes(props) {
     };
     // setRestaurantData(getRestaurants());
     const data = restaurantData.map((op, index) => (
-        <>
-            <TopDishItemSpan
-                key={index}
-                image={require(`./images/img${index}.webp`)}
-            >
-                <RestaurantTitle key={`title${index}`}>{op}</RestaurantTitle>
-            </TopDishItemSpan>
-        </>
+        <TopDishItemSpan
+            key={index}
+            image={require(`./images/img${index}.webp`)}
+        >
+            <RestaurantTitle key={op}>{op}</RestaurantTitle>
+        </TopDishItemSpan>
     ));
+
     return (
         <>
-            <StyledTitle key="title">
-                Top Rated Restaurants Near You
-            </StyledTitle>
+            <StyledTitle key="ttle">Top Rated Restaurants Near You</StyledTitle>
             <TopDishesBackground key="topDish">{data}</TopDishesBackground>
         </>
     );
