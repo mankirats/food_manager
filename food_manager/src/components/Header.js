@@ -5,11 +5,14 @@ import {
     HeaderLink,
     StoreLink,
 } from "./CustomStyle.js";
+import { Link } from "react-router-dom";
 function Header(props) {
     return (
         <>
             <HeaderBackground>
-                <HeaderTitle>foodManager</HeaderTitle>
+                <Link to="/">
+                    <HeaderTitle>foodManager</HeaderTitle>
+                </Link>
                 <div>
                     {/* <HeaderLink>Food Recipes</HeaderLink> */}
                     <StoreLink>
